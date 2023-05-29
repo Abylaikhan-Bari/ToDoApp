@@ -1,0 +1,11 @@
+<h3 align="center">Update Task</h3>
+
+<form method="POST" action="" align="center">
+	{% csrf_token %}
+
+	{{form}}
+	<input type="submit" name="Update Task">
+    <hr>
+    <a href="{% url 'list' %}" >Go back</a>
+
+</form>

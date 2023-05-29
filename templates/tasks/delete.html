@@ -1,0 +1,11 @@
+{#{% extends 'tasks/list.html' %}#}
+<p align="center">Are you sure you want to delete "{{item}}"?</p>
+
+<form method="POST" action="" align="center">
+	{% csrf_token %}
+	<input type="submit" name="Confirm">
+</form>
+<hr>
+<div align="center">
+    <a href="{% url 'list' %}" >Cancel</a>
+</div>
